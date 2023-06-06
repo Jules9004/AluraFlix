@@ -8,6 +8,8 @@ import VideoForm from './components/VideoForm';
 import Categories from './components/Categories.js';
 import ActionMovies from './components/ActionMovies.js';
 import AdventureMovies from './components/AdventureMovies';
+import KidsMovies from './components/KidsMovies';
+import Comedy from './components/Comedy';
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/accion" element={<ActionMovies />} />
           <Route path="/aventura" element={<AdventureMovies />} />
+          <Route path="/infantil" element={<KidsMovies />}/>
+          <Route path="/comedia" element={<Comedy />} />
         </Routes>
       </div>
       <Footer />
