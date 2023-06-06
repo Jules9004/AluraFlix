@@ -4,9 +4,7 @@ import vendetta from './images/accion/vendetta.jpeg';
 import blackWidow from './images/accion/blackWidow.jpeg'; 
 import divergent from './images/accion/divergent.jpeg';
 import savingPrivateRyan from './images/accion/savingPrivateRyan.jpeg';
-import badBoys from './images/accion/badBoys.jpeg';
-import agFortune from './images/accion/agFortune.jpeg';
-import lostCity from './images/accion/lostCity.jpeg';
+
 
 function ActionMovies() {
  
@@ -16,9 +14,7 @@ function ActionMovies() {
     { title: 'BLACK WIDOW',  image: blackWidow, link: 'https://www.youtube.com/watch?v=OqzdxtYuEG0' },
     { title: 'DIVERGENTE',  image: divergent, link: 'https://www.youtube.com/watch?v=y3MqfDIKZWs&pp=ygUKaW5zdXJnZW50ZQ%3D%3D' },
     { title: 'RESCATANDO A SOLDADO RYAN',  image: savingPrivateRyan, link: 'https://www.youtube.com/watch?v=XkPA4XrWiy8' },
-    { title: 'BAD BOYS',  image: badBoys, link: 'https://www.youtube.com/watch?v=fssadefZi0c' },
-    { title: 'AGENTE FORTUNE: EL GRAN ENGAÑO',  image: agFortune, link: 'https://www.youtube.com/watch?v=xv9dfNAendA' },
-    { title: 'LA CIUDAD PERDIDA',  image: lostCity, link: 'https://www.youtube.com/watch?v=5X6NY2Pj7fo' },
+    
     
   ];
 

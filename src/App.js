@@ -10,6 +10,7 @@ import ActionMovies from './components/ActionMovies.js';
 import AdventureMovies from './components/AdventureMovies';
 import KidsMovies from './components/KidsMovies';
 import Comedy from './components/Comedy';
+import Documentaries from './components/Documentaries';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/aventura" element={<AdventureMovies />} />
           <Route path="/infantil" element={<KidsMovies />}/>
           <Route path="/comedia" element={<Comedy />} />
+          <Route path="/documentales" element={<Documentaries />} />
         </Routes>
       </div>
       <Footer />

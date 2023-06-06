@@ -11,13 +11,13 @@ import bigHero from './images/infantil/bigHero.jpeg';
 function KidsMovies() {
  
   const kidsMovies = [
-    { title: 'FROZEN',  image: froz, link: 'https://www.youtube.com/watch?v=HC2hHNOBqXg' },
-    { title: 'TOY STORY',  image: toySt, link: 'https://www.youtube.com/watch?v=pxzAOb7_bXc' },
-    { title: 'ENCANTO',  image: encanto, link: 'https://www.youtube.com/watch?v=ODFadX49UlQ' },
-    { title: 'RATATOUILLE',  image: ratatoui, link: 'https://www.youtube.com/watch?v=1LRKWIOJHDs' },
-    { title: 'RALPH EL DEMOLEDOR',  image: ralph, link: 'https://www.youtube.com/watch?v=XU_JNF_nXBw' },
+    { title: 'FROZEN',  image: froz, link: 'https://www.youtube.com/watch?v=aL1nLsO5wtM&list=PLgl7CAfJSrVDOOxJgWFX7K6QbOTbq8jYZ' },
+    { title: 'TOY STORY',  image: toySt, link: 'https://www.youtube.com/watch?v=YB1s13MLbAE&list=PLIEJgI0Ct4jxrhYCNCdRShhsdvr4vwSt9' },
+    { title: 'ENCANTO',  image: encanto, link: 'https://www.youtube.com/watch?v=JWe_smmkgrw&list=PL3E3n6tt5h1t_-MtDnt7RBUynUJHYlJTJ' },
+    { title: 'RATATOUILLE',  image: ratatoui, link: 'https://www.disneyplus.com/es-419/video/13299050-3a5a-4d04-b340-f6e6e26cd312' },
+    { title: 'RALPH EL DEMOLEDOR',  image: ralph, link: 'https://www.youtube.com/watch?v=JWe_smmkgrw&list=PL3E3n6tt5h1t_-MtDnt7RBUynUJHYlJTJ' },
     { title: 'RIO 2',  image: rio2, link: 'https://www.youtube.com/watch?v=E8KNgMvV4dc' },
-    { title: 'MONSTERS INC',  image: monst, link: 'https://www.youtube.com/watch?v=ZrxCRySeHNE' },
+    { title: 'MONSTERS INC',  image: monst, link: 'https://www.youtube.com/watch?v=Df0LC5ucd_w&list=PLIEJgI0Ct4jywrKkQRc3ep0e6LfmO75up' },
     { title: 'BIG HERO6',  image: bigHero, link: 'https://www.youtube.com/watch?v=3HGTmEnEfog' },
   ];
 
