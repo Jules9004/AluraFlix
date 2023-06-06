@@ -14,17 +14,6 @@
   }
 }
 
-.App-header {
-  background-color: #75829c;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -35,73 +24,44 @@
   height: 50px;
   opacity: 9;
 }
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-/* .navbar-row{
-  background-image: url('./components/images/fondo2.jpeg');
-} */
 .navbar-brand{
-  justify-items: center;
-}
-.brand{
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-items: space-around;
 }
+
 li>a{
   padding: 8px 24px;
 }
-li{
-  margin-left: 15px;
-  transition: 2s;
-  list-style-type: none;
-}
+
 a{
-  color: rgb(201, 228, 215);
   text-decoration: none;
-}
-.nav-links{
-  display: flex;
-  align-items: center;
-}
-.button-menu-toggle{
-  display:grid;
-}
-.navbar a{
   display: flex;
   color:rgb(71, 82, 51);
   font-weight: bold;
   font-size: 1.3rem;
 }
+a:hover{
+  color: rgb(178, 236, 182);
+}
 .nav-fund{
-  background-image: url('./components/images/fund4.jpeg');
+  background-image: url('./components/images/fondo2.jpeg');
   background-size:cover;
   color: white;  
-  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 30px;
+  opacity: 9;
 }
-.brand-text {
-  text-align: left;
-  margin-right: 20px;
-}
-
-.menu {
+.navbar-menu{
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 30px;
   padding: 0;
+  font-size: 40px;
 }
 
-.menu li {
-  margin-right: 10px;
-}
-.brand, a:hover{
-  color: rgb(178, 236, 182);
-}
 .banner {
   background-image: url('./components/images/fund.jpeg');
   background-size:contain;
@@ -125,16 +85,8 @@ nav {
   padding: 1rem 1rem;
 }
 
-#search_btn {
-  background-color: #febd69;
-}
-
-.input-group {
-  width: 90%;
-  margin-right: 35%;
-}
 .form-categories{
-  background-image: url('./components/images/fund3.jpeg');
+  background-image: url('./components/images/fund4.jpeg');
   display: 'flex';
   flex-direction: column;
   align-items: center;
@@ -144,25 +96,12 @@ nav {
   color: white;
   font-size: 20px;
 }
-.label-category{
-    width: 200px; 
-    height: 70px; 
 
-}
-.category-select {
-  width: 100%;
-  height: 36px;
-  padding: 6px 12px;
-  font-size: 14px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-#search_field {
-  height: 2.4rem;
-  padding: 1rem;
-}
 .form-container {
-  background-image: url('./components/images/fund4.jpeg');
+  background-image: url('./components/images/fund5.jpeg');
+  background-size:cover;
+  background-position: center;
+  image-rendering: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -171,6 +110,7 @@ nav {
   background-size: cover;
   background-position: center;
   min-height: 100vh; 
+  opacity: 9;
 }
 .form-video{
   display: flex;
@@ -188,7 +128,7 @@ button:hover{
 }
 footer{
   background-color: rgb(222, 233, 243);
-  justify-items: center;
+  align-items: center;
   padding: 15px;
   margin-top: 20px;
 }

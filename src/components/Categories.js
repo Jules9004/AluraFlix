@@ -6,16 +6,17 @@ function Categories() {
     <div className="form-categories" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h2>Categorías</h2>
       <br />
-      <br />
-      <br />
-      <Link to="/accion">Acción</Link> <br />
-      <Link to="/aventura">Aventura</Link> <br />
-      <Link to="/infantil">Infantil</Link> <br />
-      <Link to="/ciencia-ficcion">Ciencia Ficción</Link> <br />
-      <Link to="/comedia">Comedia</Link> <br />
-      <Link to="/documentales">Documentales</Link> <br />
-      <Link to="/drama">Drama</Link><br />
-      <Link to="/fantasia">Fantasía</Link>
+      <div style={{fontSize:'25px', marginLeft:'15px', transition:'1s'}}> 
+        <Link to="/accion" style={{fontSize:'25px', marginLeft:'15px', transition:'1s'}}>Acción</Link> <br />
+        <Link to="/aventura" style={{fontSize:'25px', marginLeft:'15px', transition:'1s'}}>Aventura</Link> <br />
+        <Link to="/infantil" style={{fontSize:'25px', marginLeft:'15px', transition:'1s'}}>Infantil</Link> <br />
+        <Link to="/ciencia-ficcion" style={{fontSize:'25px', marginLeft:'15px', transition:'1s'}}>Ciencia Ficción</Link> <br />
+        <Link to="/comedia" style={{fontSize:'25px', marginLeft:'15px', transition:'1s'}}>Comedia</Link> <br />
+        <Link to="/documentales" style={{fontSize:'25px', marginLeft:'15px', transition:'1s'}}>Documentales</Link> <br />
+        <Link to="/drama" style={{fontSize:'25px', marginLeft:'15px', transition:'1s'}}>Drama</Link><br />
+       
+      </div>
+      
     </div>
   );
 }

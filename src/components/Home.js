@@ -12,9 +12,8 @@ import image6 from './images/image6.jpeg';
 import image7 from './images/image7.jpeg';
 
 function Home() {
-  const [movies, setMovies] = useState([]); // Estado para almacenar la lista de películas
+  const [movies, setMovies] = useState([]); 
 
-  // Función para manejar el envío del formulario
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const movieName = e.target.elements.movieName.value;
@@ -29,7 +28,7 @@ function Home() {
       <div className="banner">
         <h1>Bienvenido a Aluraflix</h1>
       </div>
-      <div className='images-home' style={{ display: 'flex', flexWrap:'wrap',  justifyContent: 'space-around', alignItems: 'center', flexDirection: 'column' }}>
+      <div className='images-home' style={{ display: 'flex', flexWrap:'wrap',  justifyContent: 'space-around', alignItems: 'center', flexDirection: 'reow' }}>
         <div className='img'>
             <h2>UP</h2>
             <img src={image1} alt="Imagen 1" />
@@ -46,9 +45,9 @@ function Home() {
             <h2>Ciencia Ficción</h2>
         </div>
         <div className='img'>
-            <h2>UP</h2>
+            <h2>JOHN WICK</h2>
             <img src={image4} alt="Imagen 4" />
-            <h2>Infantil</h2>
+            <h2>Acción</h2>
         </div>
         <div className='img'>
             <h2>THE MINIONS</h2>
@@ -67,9 +66,10 @@ function Home() {
         </div>
         
       </div>
-      <div className="video-list" >
-        <h2 style={{alignContent: 'center'}}>Videos</h2>
+      <div className="video-list" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '2rem' }}>
+        <h2>Videos</h2>
         <ul>
+          
           {movies.map((movie, index) => (
             <li key={index}>
               <h3>{movie.name}</h3>
@@ -83,9 +83,9 @@ function Home() {
       <div className="add-movie-form" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <h2 style={{alignContent: 'center'}}>Agregar Película</h2>
             <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <input type="text" name="movieName" placeholder="Nombre de la película" required style={{ marginBottom: '1rem' }} />
-                <input type="text" name="movieURL" placeholder="URL de la película" required style={{ marginBottom: '1rem' }} />
-                <button type="submit" style={{ padding: '0.5rem 1rem' }}>Agregar</button>
+                <input type="text" name="movieName" placeholder="Nombre de la película" required style={{ width:'300px', height:'30px', marginBottom: '1.5rem' }} />
+                <input type="text" name="movieURL" placeholder="URL de la película" required style={{width:'300px', height:'30px', marginBottom: '1.5rem' }} />
+                <button type="submit" style={{ width:'150px', height:'40px',padding: '0.5rem 1rem', borderRadius:'10px' }}>Agregar</button>
             </form>
       </div>
     </div>
