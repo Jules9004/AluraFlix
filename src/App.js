@@ -1,4 +1,4 @@
-import './App.css';
+import './Global.css';
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/layout/Footer';
@@ -11,6 +11,7 @@ import AdventureMovies from './components/AdventureMovies';
 import KidsMovies from './components/KidsMovies';
 import Comedy from './components/Comedy';
 import Documentaries from './components/Documentaries';
+import Drama from './components/Drama';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/infantil" element={<KidsMovies />}/>
           <Route path="/comedia" element={<Comedy />} />
           <Route path="/documentales" element={<Documentaries />} />
+          <Route path="/drama" element={<Drama />} />
         </Routes>
       </div>
       <Footer />

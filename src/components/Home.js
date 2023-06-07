@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Banner from '../Banner';
 import VideoList from '../VideoList';
+import VideoCard from './VideoCard';
+import VideoSlider from './VideoSlider';
 
 import image1 from './images/image1.jpeg';
 import peli4 from './images/peli4.jpeg';
@@ -13,13 +15,17 @@ import image7 from './images/image7.jpeg';
 
 function Home() {
   const [movies, setMovies] = useState([]); 
+  const [videos, setVideos] = useState([])
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const movieName = e.target.elements.movieName.value;
     const movieURL = e.target.elements.movieURL.value;
     const newMovie = { name: movieName, url: movieURL };
+    const newVideo = { name: movieName, url: movieURL };
+
     setMovies((prevMovies) => [...prevMovies, newMovie]);
+    setVideos((prevVideos) => [...prevVideos, newVideo]);
     e.target.reset();
   };
 
@@ -80,11 +86,17 @@ function Home() {
           ))}
         </ul>
       </div>
+      <div className="video-list">
+        {videos.map((video, index) => (
+          <VideoCard key={index} videoURL={video.url} />
+        ))}
+      </div>
+
       <div className="add-movie-form" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <h2 style={{alignContent: 'center'}}>Agregar Película</h2>
+        <h2 style={{alignContent: 'center'}}>Nuevo Video</h2>
             <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <input type="text" name="movieName" placeholder="Nombre de la película" required style={{ width:'300px', height:'30px', marginBottom: '1.5rem' }} />
-                <input type="text" name="movieURL" placeholder="URL de la película" required style={{width:'300px', height:'30px', marginBottom: '1.5rem' }} />
+                <input type="text" name="movieName" placeholder="Nombre del video" required style={{ width:'300px', height:'30px', marginBottom: '1.5rem' }} />
+                <input type="text" name="movieURL" placeholder="URL del video" required style={{width:'300px', height:'30px', marginBottom: '1.5rem' }} />
                 <button type="submit" style={{ width:'150px', height:'40px',padding: '0.5rem 1rem', borderRadius:'10px' }}>Agregar</button>
             </form>
       </div>
@@ -94,6 +106,7 @@ function Home() {
 
     <div>
       <Header />
+      <VideoSlider />
       <Banner />
       <VideoList />
     </div>

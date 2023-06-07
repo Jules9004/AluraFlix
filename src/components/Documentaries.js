@@ -20,8 +20,8 @@ function Documentaries() {
           <div key={index} style={{ margin: '15px', textAlign: 'center' }}>
             <h3>{movie.title}</h3>
             <img src={movie.image} alt={movie.title} style={{ width: '300px', height: '400px' }} />
-            <p>Director: {movie.director}</p>
-            <a href={movie.link}>Ver documental</a>
+            <p>{movie.director}</p>
+            <a href={movie.link} style={{marginLeft:'30%'}}>Ver documental</a>
           </div>
         ))}
       </div>
