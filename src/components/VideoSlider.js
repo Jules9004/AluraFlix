@@ -1,50 +1,43 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React, { useState } from 'react';
 
 const VideoSlider = ({ videos }) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+function showVideo(index) {
+    const videoPlayer = document.getElementById('videoPlayer');
+    videoPlayer.src = videos[index];
+    setCurrentVideoIndex(index);
+  };
+
+  function prevVideo () {
+    const newIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
+    showVideo(newIndex);
+  };
+
+  function nextVideo () {
+    const newIndex = (currentVideoIndex + 1) % videos.length;
+    showVideo(newIndex);
   };
 
   return (
-    <div className="video-slider">
-      <Slider {...settings}>
-        {videos.map((video, index) => (
-          <div key={index}>
-            <h2>{video.title}</h2>
-            <iframe
-              src={`https://www.youtube.com/embed/${video.videoId}`}
-              title={video.title}
-              width="560"
-              height="315"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-        ))}
-      </Slider>
+    <div className="video-slider" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom:'20px'}}>
+      <h2>Video Slider</h2>
+      <div>
+        <iframe
+          id="videoPlayer"
+          src={videos[currentVideoIndex]}
+          title="Video"
+          width="560"
+          height="315"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <button onClick={prevVideo}>Prev</button>
+      <button onClick={nextVideo}>Next</button>
     </div>
   );
 };
 
 export default VideoSlider;
+

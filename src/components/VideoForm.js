@@ -131,7 +131,7 @@ function VideoForm() {
               </label>
             </div>
             <div className="form-buttons">
-              <button variant="contained" type="submit" className="btn-submit" style={{ width:'150px', height:'40px',padding: '0.5rem 1rem', borderRadius:'10px', backgroundColor:'lightcoral' }}>Guardar</button>
+              <button variant="contained" type="submit" className="btn-submit" style={{ width:'150px', height:'40px',padding: '0.5rem 1rem', borderRadius:'10px', backgroundColor:'lightcoral' }}>Guardar Video</button>
               <button type="button" className="btn-clear" onClick={handleClear} style={{ width:'150px', height:'40px',padding: '0.5rem 1rem', borderRadius:'10px' }}>Limpiar</button>
             </div>
         </form>
